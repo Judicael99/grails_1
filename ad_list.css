@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+    color: blanchedalmond;
+    /* background-color: rgba(243, 240, 240, 0.84); */
+    background-color:rgb(237, 234, 234);
+    
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 7fr 0.5fr;
+    /* background-color: red; */
+    height: 100vh;
+    /* margin: 0;
+    padding: 0; */
+    grid-template-areas: 
+    "header"
+    "navigation"
+    "articles"
+    "footer"
+    ;
+}
+header{
+    grid-area: header;
+    background-color: #3498DB;
+    padding-left: 2%;
+    padding-top: 1%;
+    font-size: 32px;
+
+}
+
+nav{
+    grid-area: navigation;
+    /* background-color: blue; */
+    display: flex;
+  
+
+}
+button{
+    width: 50%;
+    height: 100%;
+    background-color: #3498DB;
+    border: none;
+    color: blanchedalmond;
+    font-size: 20px;
+}
+button:active{
+    background-color: blue;
+}
+article{
+    grid-area: articles;
+    /* background-color: green; */
+    display: flex; 
+   
+    
+    /* flex-direction: column; */
+}
+/* article div{
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    background-color: black; 
+    width: 50%;
+    height: 200px;
+} */
+.elements{
+    margin: 10px;
+    
+    display: flex;
+    
+    /* align-items: center; 
+    justify-content: flex-start; */
+    /* background-color: black; */
+    width: 50%;
+    height: 200px;
+   
+}
+
+
+.details{
+    display: flex;
+    flex-direction: column;  
+    /* background-color: burlywood; */
+    /* margin: 0;
+    padding: 0; */
+    width: 100%;
+    background-color: white;
+    color: black;
+    /* align-items: top; */
+  
+}
+.details h3{
+    color: grey;   
+}
+
+p{
+    color: grey;   
+}
+.details div{
+    display: flex;
+    margin-bottom: 2px;
+    margin-top: auto;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    /* text-align: right;  */
+    
+}
+img{
+    height: 100%;
+}
+footer{
+    grid-area: footer;
+    background-color: #3498DB;
+    margin: 0;
+    padding-top: 0.5%;
+    font-size: 20px;
+    
+    /* margin-top: auto;
+    margin-bottom: 0; */
+}
+
+/* ------pour les smartphones ----*/
+@media screen and (max-width: 640px) { 
+    article{
+        grid-area: articles;
+        /* background-color: green; */
+        display: flex; 
+        flex-direction: column;
+        
+        /* flex-direction: column; */
+    }
+    header{
+       
+        text-align: center;
+        /* margin-top: auto;
+        margin-bottom: 0; */
+    }
+
+    footer{
+       
+        text-align: center;
+        /* margin-top: auto;
+        margin-bottom: 0; */
+    }
+
+}
